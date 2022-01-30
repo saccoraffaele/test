@@ -8,6 +8,7 @@ header{
 .menu-destro{
     margin-top: 5px;
     padding: 10px 10px;
+    margin-left: auto;
     
     
     
@@ -15,6 +16,11 @@ header{
 div p{
     color: white;
     margin-left: 10px;
+}
+
+.bx-menu{
+    font-size: 40px;
+    visibility: collapse;
 }
 
 
@@ -99,7 +105,7 @@ div .box{
 }
 
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 660px) and (min-width:150px) {
 
    
     .navbar{
@@ -114,13 +120,12 @@ div .box{
 
         display: flex;
         
+        
     }
 
-   
-    .box{
-        
-       
-        
+    .bx-menu{
+        visibility: visible;
+        margin-top: 5px;
     }
 
 
